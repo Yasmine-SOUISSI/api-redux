@@ -1,16 +1,30 @@
 {
-  "users": [
-    {
-      "name": "fff",
-      "email": "fff",
-      "username": "fff",
-      "id": 0.7498301384462598
-    },
-    {
-      "name": "fff",
-      "email": "fff",
-      "username": "fff",
-      "id": 0.5148532803347889
-    }
-  ]
+    "contacts": [
+        {
+            "name": "fff",
+            "email": "fff",
+            "username": "fff",
+            "id": 0.7498301384462598
+        },
+        {
+            "name": "fff",
+            "email": "fff",
+            "username": "fff",
+            "id": 0.5148532803347889
+        },
+        {
+            "name": "ffff",
+            "email": "ffff",
+            "username": "fff",
+            "id": 0.9928377923987981
+        }
+    ],
+    "users": [
+        {
+            "email": "fffff@gmail.com",
+            "password": "Azerty123/",
+            "token": "0.4725335716698127",
+            "id": 1
+        }
+    ]
 }

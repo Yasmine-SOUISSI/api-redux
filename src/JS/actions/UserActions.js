@@ -2,7 +2,7 @@ import axios from "axios";
 import { GET_USERS, FAILURE } from "../actionsTypes/UserActionsTypes";
 export const getUsers = () => async (dispatch) => {
     try {
-        const res = await axios.get("http://localhost:3000/users");
+        const res = await axios.get("http://localhost:3000/contacts");
         dispatch({
             type: GET_USERS,
             payload: res.data,
@@ -16,7 +16,7 @@ export const getUsers = () => async (dispatch) => {
 };
 export const addUser = (user) => async (dispatch) => {
     try {
-        const res = await axios.post("http://localhost:3000/users", user);
+        const res = await axios.post("http://localhost:3000/contacts", user);
         dispatch({
             type: "ADD_USER",
             payload: res.data,
@@ -28,7 +28,7 @@ export const addUser = (user) => async (dispatch) => {
 
 export const deleteUser = (id) => async (dispatch) => {
     try {
-        const res = await axios.delete(`http://localhost:3000/users/${id}`);
+        const res = await axios.delete(`http://localhost:3000/contacts/${id}`);
         dispatch({
             type: "DELETE_USER",
             payload: res.data,
